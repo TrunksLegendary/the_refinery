@@ -89,7 +89,8 @@ INDEX_HTML = r"""<!DOCTYPE html>
 
   header { display: flex; align-items: center; gap: 14px; padding: 14px 28px; border-bottom: 1px solid var(--border); background: rgba(10,11,13,.7); backdrop-filter: blur(8px); position: sticky; top: 0; z-index: 15; }
   .brand { display: flex; align-items: center; gap: 9px; font-weight: 650; font-size: 14.5px; letter-spacing: -.01em; }
-  .brand .logo { width: 22px; height: 22px; border-radius: 6px; background: var(--accent); color: #fff; display: flex; align-items: center; justify-content: center; font-size: 12px; font-weight: 800; font-family: var(--mono); }
+  .brand .logo { width: 28px; height: 28px; display: flex; align-items: center; justify-content: center; flex-shrink: 0; }
+  .brand .logo svg { width: 100%; height: 100%; }
   header .subtitle { color: var(--text-faint); font-size: 12.5px; padding-left: 12px; border-left: 1px solid var(--border); }
   header .spacer { flex: 1; }
   .container { max-width: 1180px; margin: 0 auto; padding: 26px 24px 60px; }
@@ -223,7 +224,28 @@ INDEX_HTML = r"""<!DOCTYPE html>
 </head>
 <body>
 <header>
-  <div class="brand"><span class="logo">R</span> Refinery</div>
+  <div class="brand"><span class="logo"><svg viewBox="0 0 120 120" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Refinery logo">
+    <path d="M22 96 h20 v-14 h30" stroke="rgba(255,255,255,.25)" stroke-width="5" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M98 96 h-14 v-20 h-10" stroke="rgba(255,255,255,.25)" stroke-width="5" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+    <circle cx="42" cy="82" r="3.2" fill="rgba(255,255,255,.35)"/>
+    <circle cx="84" cy="76" r="3.2" fill="rgba(255,255,255,.35)"/>
+    <rect x="10" y="70" width="26" height="30" rx="6" fill="#7fc2ff"/>
+    <rect x="10" y="70" width="26" height="8" rx="4" fill="#a9d6ff"/>
+    <rect x="14" y="86" width="18" height="4" rx="2" fill="#5fa8e6"/>
+    <rect x="84" y="76" width="24" height="24" rx="6" fill="#6fdba8"/>
+    <rect x="84" y="76" width="24" height="7" rx="3.5" fill="#9aeecb"/>
+    <rect x="88" y="90" width="16" height="4" rx="2" fill="#4dbf8c"/>
+    <rect x="46" y="30" width="24" height="70" rx="7" fill="#5e6ad2"/>
+    <rect x="46" y="30" width="9" height="70" rx="4" fill="#7c86e6"/>
+    <rect x="46" y="48" width="24" height="5" rx="2" fill="#454fb0"/>
+    <rect x="46" y="64" width="24" height="5" rx="2" fill="#454fb0"/>
+    <rect x="46" y="80" width="24" height="5" rx="2" fill="#454fb0"/>
+    <ellipse cx="58" cy="30" rx="12" ry="6" fill="#6c77dc"/>
+    <rect x="74" y="46" width="7" height="54" rx="3.5" fill="#3a4152"/>
+    <rect x="74" y="46" width="3" height="54" rx="1.5" fill="#4d5568"/>
+    <path d="M77.5 46 C73 40 74 33 78 28 C77 34 80 35 82 31 C83 37 88 39 84 46 C82 43 80 44 79 47 C78.5 46.6 78 46.3 77.5 46 Z" fill="#e2a33d"/>
+    <path d="M77.5 44 C75 40 76 36 78.5 33 C78 37 80 37.5 81 35.5 C82 39 84 40 82 44 C80.5 42 79.5 42.5 79 44.5 C78.5 44.3 78 44.1 77.5 44 Z" fill="#f2c46b"/>
+  </svg></span> Refinery</div>
   <div class="subtitle">Crude export &rarr; refined training data</div>
   <div class="spacer"></div>
   <button class="ghost" id="resetBtn">Start over</button>
