@@ -150,6 +150,8 @@ Example: `python webapp.py --port 8800`
 
 ## 6. Step 1 — Extract
 
+![Extract step, with a path entered and a completed extraction](assets/screenshots/01_extract.png)
+
 This is where a raw export becomes a structured list of conversations.
 
 ### Manual path entry
@@ -198,6 +200,8 @@ kept, dropped as empty, dropped as too short, any unrecognized files) and a
 
 ## 7. Step 2 — Clean
 
+![Clean step after running, showing the result stats](assets/screenshots/02_clean.png)
+
 This step removes noise from the extracted dataset. It runs in this order:
 whitespace/boilerplate cleanup → exact-duplicate removal → near-duplicate
 removal → quality filters. You can skip this step entirely with **Skip →
@@ -222,6 +226,8 @@ count, then **Continue to Merge →**.
 ---
 
 ## 8. Step 3 — Merge
+
+![Merge step's overlap report, showing a detected duplicate group with the recommended copy pre-checked](assets/screenshots/03_merge.png)
 
 This step is for combining your current working dataset with *other*
 already-cleaned ShareGPT JSON files — for example, output from a previous
@@ -265,6 +271,8 @@ around and just want to de-duplicate and combine them.
 
 ## 9. Step 4 — Review
 
+![Review step with a conversation open in the turn editor](assets/screenshots/04_review.png)
+
 This is a full editor over the dataset — browse, search, fix, or delete
 anything before it gets exported.
 
@@ -292,6 +300,8 @@ Click **Continue to Export →** when you're satisfied.
 ---
 
 ## 10. Step 5 — Export
+
+![Export step after a successful validate & save](assets/screenshots/05_export.png)
 
 This is the only step that writes anything to disk, and it always
 validates first.
